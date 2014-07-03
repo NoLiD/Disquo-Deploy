@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Disquo</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+
+</head>
+
+<body>
+
+<div id="main_container">
+    
+<ul id="selection_bar">
+    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck."><span class="label">50s Movies</span> | <span class="deselect">X</span></li>
+    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck."><span class="label">Waterfront</span> | <span class="deselect">X</span></li>
+    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck."><span class="label">Streetcar Named Desire</span> | <span class="deselect">X</span></li>
+    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck."><span class="label">Rebel Without a Cause</span> | <span class="deselect">X</span></li>
+</ul>
+<div id="visual_container">
+    <div id="entities_container">
+        <div id="types_container">
+            <div class="column" id="types">
+                <!-- Column one start -->
+                <h3>Types</h3>
+                <ul>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Skin Disease</li>
+                    <li class="type selected" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">50s Movie</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Scifi Movie</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Flying Mammal</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Spoken Language</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Scientist</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Physicist</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Recursively Enumerable Grammar</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Political Party</li>
+                    <li class="type" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Nazi Sympathizer</li>
+                </ul>
+                <!-- Column one end -->
+            </div>
+            <div class="column" id="entities">
+                <!-- Column two start -->
+                <h3>Entities</h3>
+                <ul>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">The Thing from Another World</li>
+                    <li class="entity selected" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Rebel Without a Cause</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">The Day the Earth Stood Still</li>
+                    <li class="entity selected" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Streetcar Named Desire</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Invasion of the Body Snatchers</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">The Bridge on the River Kwai</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Ben-Hur</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Vertigo</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Rear Window</li>
+                    <li class="entity" data-uri="http://example.org/entity_uri" data-comment="This is a string of comment text. Lorem ipsum something word word duck.">Dial M for Murder</li>
+                </ul>
+                <!-- Column two end -->
+            </div>
+            <div class="column" id="visual">
+                <!-- Column three start -->
+                <h3 id="visual_mode">Predicate View</h3>
+                <!-- Column three end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+<script src="./bower_components/handlebars/handlebars.js"></script>
+<script src="./bower_components/ember/ember.js"></script>
+<script src="./app.js"></script>
+    
+</body>
+
+</html>

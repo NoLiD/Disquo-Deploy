@@ -1,0 +1,137 @@
+/* color palette as per 
+   http://paletton.com/#uid=30n0L0kbn++00++69++fM++jS+U*/
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 0;
+    color: #c0c0c0;
+    text-shadow: 0 0.1em 0.1em #ddd;
+}
+#main_container {
+    overflow: hidden;
+    padding: 0.5em;
+    background-color: inherit;
+    border: 1px solid #c5c5c5;
+}
+
+/* list items and tags */
+.type, .entity {
+    position: relative;
+    cursor: default;
+}
+.type {
+    background-color: #e5e8ff;
+    border: 1px solid #ccd0ff;
+}
+.entity {
+    background-color: #ECFFCE;
+    border: 1px solid #b7ff42;
+}
+.selected {
+    border-color: #333333;
+    border-style: dashed;
+    border-width: 1px;
+    font-weight: bold;
+}
+.type:hover, .entity:hover {
+    background-color: #ffffff;
+}
+    
+
+/* tooltips - requires relative positioning of list items */
+.type:after, .entity:after {
+    position: absolute;
+    top: 1.6em;
+    left: 0.3em;
+    z-index: 1000;
+    border: inherit;
+    border-style: dotted;
+    background-color: white;
+    font-weight: normal;
+    padding: inherit;
+    visibility: hidden;
+    content: "Comment: " attr(data-comment);
+}
+.type:hover:after, .entity:hover:after {
+    visibility:visible;
+}
+
+/* types and entities columns */
+.column ul {
+	list-style-type: none;
+    padding: 0 0 1em 0;
+    margin: 0;
+    z-index: -1;
+}
+.column li {
+    padding: 0.3em;
+}
+
+/* selection bar */
+#selection_bar {
+    margin: 0.5em 0 0.5em 0;
+	list-style-type: none;
+    padding: 0;
+}
+#selection_bar > li {
+	display: inline-block;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+}
+#selection_bar .deselect {
+	font-family:sans-serif;
+        font-weight:bold;
+        font-size:0.6em;
+        color:#aaaaaa;
+}
+
+/*
+column layout adapted from
+matthewjamestaylor.com/blog/equal-height-columns-cross-browser-css-no-hacks
+*/
+#visual_container {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+    position:relative;
+}
+#entities_container {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:60%;
+}
+#types_container {
+	float:left;
+	width:100%;
+	position:relative;
+	right:20%;
+}
+#types {
+	float:left;
+	width:20%;
+	position:relative;
+	left:80%;
+	overflow:hidden;
+}
+#entities {
+	float:left;
+	width:20%;
+	position:relative;
+	left:80%;
+	overflow:hidden;
+}
+#visual {
+	float:left;
+	width:60%;
+	position:relative;
+	left:80%;
+	overflow:hidden;
+}
